@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://mitch-123:kh4nkh4n@bookreviewclub.dsimj.mongodb.net/BookReviewClub?retryWrites=true&w=majority",
+  "jwtSecret": "mysecrettoken"
+}
