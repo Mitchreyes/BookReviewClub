@@ -40,20 +40,17 @@ router.post('/', auth, async (req, res) => {
   if (!errors.isEmpty()) {
     return res.status(400).json({ errors: errors.array() });
   }
-  const { youtube, twitter, instagram, facebook } = req.body;
+  const { youtube, twitter, instagram, facebook, location, bio } = req.body;
 
   // build a profile
-  const profileFields = {};
-  profileFields.user = req.user.id;
-  if (location) profileFields.location = location;
-  if (bio) profileFields.bio = bio;
+  const profileFields = {
+    user: req.user.id,
+    location,
+    bio,
+  };
 
   // Build socialFields object
-  const socialFields = {};
-  if (youtube) profileFields.youtube = youtube;
-  if (twitter) profileFields.twitter = twitter;
-  if (facebook) profileFields.facebook = facebook;
-  if (instagram) profileFields.instragram = instagram;
+  const socialFields = { youtube, twitter, instagram, facebook };
 
   // normalize social fields to ensure valid url
   for (const [key, value] of Object.entries(socialFields)) {
