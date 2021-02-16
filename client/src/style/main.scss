@@ -1,27 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 :root {
-  --primary-color: #8426d1;
+  --primary-color: #2a04d3;
   --dark-color: #343a40;
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
   --success-color: #28a745;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+}
+
 body {
-  font-family: 'Raleway', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   background-color: #fff;
   color: #333;
 }
 
+a {
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+ul {
+  list-style: none;
+}
+
 /* Utilities */
 .container {
-  max-width: 1100px;
+  max-width: 900px;
   margin: auto;
   overflow: hidden;
-  padding: 0 2rem;
-  margin-top: 6rem;
+  padding: 0 0rem;
+  margin-top: 1rem;
   margin-bottom: 3rem;
+  height: 100%;
 }
 
 @import 'mixins.scss';
+@import 'alert.scss';
+@import 'navbar.scss';
+@import 'button.scss';
+@import 'login.scss';
+@import 'register.scss';
+@import 'form.scss';

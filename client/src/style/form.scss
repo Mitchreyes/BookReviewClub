@@ -1,0 +1,36 @@
+.input {
+  max-height: 40px;
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.input:focus {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.input-fields .input {
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid black;
+  border-radius: 2px;
+  padding: 10px;
+  color: black;
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: black;
+  opacity: 0.8;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: black;
+  opacity: 0.8;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: black;
+  opacity: 0.8;
+}

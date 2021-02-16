@@ -1,6 +1,6 @@
 import React, { Fragment, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Home from '../src/components/home/Home';
+
 import Navbar from '../src/components/layout/Navbar';
 import Routes from './components/routing/Routes.js';
 
@@ -33,7 +33,6 @@ const App = () => {
         <Fragment>
           <Navbar />
           <Switch>
-            <Route exact path='/' component={Home} />
             <Route component={Routes} />
           </Switch>
         </Fragment>
