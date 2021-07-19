@@ -7,26 +7,26 @@ const Review = require('../../models/Review');
 const User = require('../../models/User');
 const checkObjectId = require('../../middleware/checkObjectId');
 
-// @route    POST api/review
+// @route    POST api/reviews
 // @desc     Create a review
 // @access   Private
 router.post(
   '/',
   auth,
-  check('text', 'Text is required').notEmpty(),
+  check('review', 'Text is required').notEmpty(),
   check('author', 'Author is required').notEmpty(),
   check('title', 'Title is required').notEmpty(),
   async (req, res) => {
-    const errors = validationResult(req);
-    if (errors.notEmpty()) {
-      return res.status(400).json({ errors: errors.array() });
-    }
+    // const errors = validationResult(req);
+    // if (errors.notEmpty()) {
+    //   return res.status(400).json({ errors: errors.array() });
+    // }
 
     try {
       const user = await User.findById(req.user.id).select('-password');
 
       const newReview = new Review({
-        text: req.body.text,
+        review: req.body.review,
         name: user.name,
         author: req.body.author,
         title: req.body.title,
@@ -106,7 +106,7 @@ router.delete('/:id', [auth, checkObjectId('id')], async (req, res) => {
 // @access   Private
 router.put('/like/:id', auth, checkObjectId('id'), async (req, res) => {
   try {
-    const review = await review.findById(req.params.id);
+    const review = await Review.findById(req.params.id);
 
     // Check if the review has already been liked
     if (review.likes.some((like) => like.user.toString() === req.user.id)) {

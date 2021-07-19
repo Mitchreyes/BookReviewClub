@@ -1,22 +1,54 @@
+.btn {
+  display: inline-block;
+  background: var(--light-color);
+  color: #333;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: opacity 0.2s ease-in;
+  outline: none;
+  max-width: 160px;
+}
+
+// .btn {
+//   color: #fff;
+//   cursor: pointer;
+//   // display: block;
+//   font-size: 16px;
+//   font-weight: 400;
+//   line-height: 45px;
+//   margin: 0 0 2em;
+//   max-width: 160px;
+//   position: relative;
+//   text-decoration: none;
+//   text-transform: uppercase;
+//   width: 100%;
+
+//   @media (min-width: 600px) {
+//     // margin: 0 1em 2em;
+
+//     &:hover {
+//       text-decoration: none;
+//     }
+//   }
+// }
+
 .btn-primary,
 .bg-primary,
 .badge-primary,
 .alert-primary {
   background: var(--primary-color);
-  color: #fff;
-  border-radius: 1px;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  height: 3rem;
-  width: 10rem;
-  font-size: 18px;
-  font-weight: bold;
+  color: #faf9f6;
 }
 
 .btn-light,
 .bg-light,
 .badge-light,
 .alert-light {
-  background: var(--light-color);
+  // background: var(--light-color);
+  background-color: transparent;
   color: #333;
 }
 
@@ -25,15 +57,14 @@
 .badge-dark,
 .alert-dark {
   background: var(--dark-color);
-  color: #fff;
+  color: #faf9f6;
 }
 
 .btn-danger,
 .bg-danger,
 .badge-danger,
 .alert-danger {
-  background: var(--danger-color);
-  color: #fff;
+  background: rgb(201, 65, 65);
 }
 
 .btn-success,
@@ -51,9 +82,4 @@
   background: #fff;
   color: #333;
   border: #ccc solid 1px;
-}
-
-.btn:hover {
-  opacity: 0.9;
-  // color: var(--dark-color);
 }

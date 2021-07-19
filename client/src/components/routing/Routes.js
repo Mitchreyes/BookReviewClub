@@ -7,6 +7,12 @@ import Home from '../home/Home';
 import Dashboard from '../home/Dashboard';
 import PrivateRoute from '../routing/PrivateRoute';
 import ProfileForm from '../profile/ProfileForm';
+import Profiles from '../profiles/Profiles';
+import Profile from '../profile/Profile';
+import Reviews from '../reviews/Reviews';
+import NotFound from '../layout/NotFound';
+import Review from '../review/Review';
+import ReviewForm from '../reviews/ReviewForm';
 
 const Routes = (props) => {
   return (
@@ -16,17 +22,15 @@ const Routes = (props) => {
         <Route exact path='/register' component={Register} />
         <Route exact path='/login' component={Login} />
         <Route exact path='/' component={Home} />
-
-        {/* <Route exact path="/profiles" component={Profiles} /> */}
-        {/* <Route exact path="/profile/:id" component={Profile} /> */}
+        <Route exact path='/profiles' component={Profiles} />
+        <Route exact path='/profile/:id' component={Profile} />
         <PrivateRoute exact path='/dashboard' component={Dashboard} />
         <PrivateRoute exact path='/create-profile' component={ProfileForm} />
         <PrivateRoute exact path='/edit-profile' component={ProfileForm} />
-        {/* <PrivateRoute exact path="/add-experience" component={AddExperience} />
-      <PrivateRoute exact path="/add-education" component={AddEducation} />
-      <PrivateRoute exact path="/posts" component={Posts} />
-      <PrivateRoute exact path="/posts/:id" component={Post} /> */}
-        {/* <Route component={NotFound} /> */}
+        <PrivateRoute exact path='/reviews' component={Reviews} />
+        <PrivateRoute exact path='/reviews/:id' component={Review} />
+        <PrivateRoute exact path='/reviewform' component={ReviewForm} />
+        <Route component={NotFound} />
       </Switch>
     </section>
   );

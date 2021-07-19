@@ -5,21 +5,31 @@ const ReviewSchema = new Schema({
   user: {
     type: Schema.Types.ObjectId,
   },
-  text: {
+
+  review: {
     type: String,
     required: true,
   },
+
   name: {
     type: String,
   },
+
   title: {
     type: String,
     required: true,
   },
+
   author: {
     type: String,
     required: true,
   },
+
+  date: {
+    type: Date,
+    default: Date.now,
+  },
+
   likes: [
     {
       user: {
