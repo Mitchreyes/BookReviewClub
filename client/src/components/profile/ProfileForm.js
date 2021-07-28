@@ -53,84 +53,85 @@ const ProfileForm = ({
       <p className='lead'>
         <i className='fas fa-user' /> Add some changes to your profile
       </p>
-      <small>* = required field</small>
+      <p>* = required field</p>
       <form className='profile-form' onSubmit={onSubmit}>
-        <div className='input-fields'>
+        <div className='input-fields login width-50 p'>
           <input
             type='text'
             placeholder='Location'
             name='location'
             value={location}
             onChange={onChange}
+            className='login-input input width-50'
           />
-          <small className='form-text'>
-            City & state suggested (eg. Boston, MA)
-          </small>
+          <p className='form-text p'>City & state suggested (eg. Boston, MA)</p>
         </div>
-        <div className='input-fields'>
+        <div className='profile-form-bio  '>
           <textarea
             placeholder='A short bio of yourself'
             name='bio'
             value={bio}
             onChange={onChange}
+            className='input'
           />
-          <small className='form-text'>Tell us a little about yourself</small>
+          <p className='form-text my p'>Tell us a little about yourself</p>
         </div>
 
         <div className='my-2'>
           <button
             onClick={() => toggleSocialInputs(!displaySocialInputs)}
             type='button'
-            className='btn btn-light'
+            className='btn btn-dark'
           >
             Add Social Network Links
           </button>
-          <span>Optional</span>
         </div>
 
         {displaySocialInputs && (
           <Fragment>
-            <div className='input-fields social-input'>
-              <i className='fab fa-twitter fa-2x' />
-              <input
-                type='text'
-                placeholder='Twitter URL'
-                name='twitter'
-                value={twitter}
-                onChange={onChange}
-              />
-            </div>
+            <div className='social-input-wrapper'>
+              <div className='social-input'>
+                <i className='fab fa-twitter fa-2x' />
+                <input
+                  type='text'
+                  placeholder='Twitter URL'
+                  name='twitter'
+                  value={twitter}
+                  onChange={onChange}
+                />
+              </div>
 
-            <div className='input-fields social-input'>
-              <i className='fab fa-facebook fa-2x' />
-              <input
-                type='text'
-                placeholder='Facebook URL'
-                name='facebook'
-                value={facebook}
-                onChange={onChange}
-              />
-            </div>
+              <div className='social-input'>
+                <i className='fab fa-facebook fa-2x' />
+                <input
+                  type='text'
+                  placeholder='Facebook URL'
+                  name='facebook'
+                  value={facebook}
+                  onChange={onChange}
+                />
+              </div>
 
-            <div className='input-fields social-input'>
-              <i className='fab fa-youtube fa-2x' />
-              <input
-                type='text'
-                placeholder='YouTube URL'
-                name='youtube'
-                value={youtube}
-                onChange={onChange}
-              />
-            </div>
-            <div className='input-fields social-input'>
-              <i className='fab fa-instagram fa-2x' />
-              <input
-                type='text'
-                placeholder='Instagram URL'
-                name='instagram'
-                value={instagram}
-                onChange={onChange}
-              />
+              <div className='social-input'>
+                <i className='fab fa-youtube fa-2x' />
+                <input
+                  type='text'
+                  placeholder='YouTube URL'
+                  name='youtube'
+                  value={youtube}
+                  onChange={onChange}
+                />
+              </div>
+              <div className='social-input'>
+                <i className='fab fa-instagram fa-2x' />
+                <input
+                  type='text'
+                  placeholder='Instagram URL'
+                  name='instagram'
+                  value={instagram}
+                  onChange={onChange}
+                />
+              </div>
             </div>
           </Fragment>
         )}

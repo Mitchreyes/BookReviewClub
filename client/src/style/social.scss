@@ -83,3 +83,17 @@ ul li:hover .slider p {
   opacity: 1;
   transition: all 1s 0.2s ease;
 }
+
+@media only screen and (max-width: 768px) {
+  .socials li {
+    width: 100%;
+  }
+
+  .slider {
+    left: 0px;
+  }
+  .socials li:hover .slider {
+    width: 100%;
+    transition: all 0.5s ease;
+  }
+}

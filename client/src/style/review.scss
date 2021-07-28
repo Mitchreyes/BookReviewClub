@@ -1,0 +1,248 @@
+.review-wrapper {
+  position: relative;
+  min-height: 300px;
+  height: auto;
+  // width: 100%;
+  // display: grid;
+  // align-items: center;
+  margin-top: 2.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 3rem;
+  // justify-items: center;
+  // margin-left: 6rem;
+}
+
+.reviews-item {
+  display: grid;
+  // justify-self: center;
+  justify-content: center;
+  box-shadow: 0 0 5px #333;
+  background: #f8f8ff;
+  border-radius: 20px;
+  padding: 1rem;
+  width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .reviews-item {
+    width: 100%;
+  }
+}
+
+.reviews-title {
+  text-align: center;
+}
+
+.reviews-author {
+  text-align: center;
+}
+
+.reviews-user {
+  display: flex;
+  justify-content: center;
+}
+
+.reviews-user .user {
+  display: flex;
+}
+
+.reviews {
+  display: grid;
+  grid-auto-rows: auto;
+  grid-gap: 4rem;
+  padding: 1rem;
+}
+
+.reviews-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.review {
+  display: flex;
+  flex-direction: row;
+}
+
+.reviews-panel {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  width: auto;
+}
+
+.comment-form {
+  display: grid;
+  grid-template-rows: auto;
+  height: 100%;
+  min-height: 200px;
+  margin-bottom: 2rem;
+}
+
+.review-body {
+  display: grid;
+  grid-template-rows: 50px 50px 40px 5fr 40px;
+  min-height: 700px;
+  height: auto;
+  position: relative;
+  box-shadow: 0px 0px 3.5px rgba(0, 0, 0, 0.3);
+  background: #fff;
+  // border-radius: 20px;
+  padding: 2rem;
+  z-index: 3;
+}
+
+.review-title {
+  justify-self: center;
+}
+
+.review-author {
+  justify-self: center;
+}
+
+.review-user {
+  display: flex;
+  justify-content: center;
+
+  .user {
+    display: flex;
+    justify-self: center;
+  }
+}
+
+.review-review {
+  margin: 2rem;
+}
+
+.review-date {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.4);
+  text-align: end;
+}
+
+.reviews-date {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.comment {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 2rem;
+  align-items: center;
+}
+.comment-body {
+  display: flex;
+  // justify-content: center;
+  flex-direction: column;
+}
+
+.comment-body textarea,
+select {
+  // align-self: center;
+  // height: auto;
+  display: block;
+  margin-inline-start: 5rem;
+  min-height: 50px;
+  width: 80%;
+  padding: 0.4rem;
+  position: relative;
+  border: 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 3.5px rgba(0, 0, 0, 0.3);
+  background: #fff;
+  border-radius: 20px;
+  padding: 2rem;
+  resize: none;
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.comment-btn {
+  width: 15%;
+  align-self: flex-end;
+  margin-right: 6rem;
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .comment-body {
+    align-items: center;
+  }
+  .comment-body textarea,
+  select {
+    margin-inline-start: 0rem;
+  }
+  .comment-btn {
+    width: 20%;
+    padding: 0.5rem;
+  }
+}
+
+.comment > div:first-child {
+  text-align: center;
+}
+
+.comment .comment-count {
+  background: var(--light-color);
+  color: var(--primary-color);
+  padding: 0.1rem 0.2rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+.comment .comment-date {
+  color: #aaa;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+//REVIEW FORM
+
+.review-form-wrapper {
+  position: relative;
+  margin-top: 50px;
+  width: 100%;
+  max-width: 900px;
+  max-height: 100%;
+  // background: rgba(0, 0, 0, 0.1);
+  padding-top: 5px;
+  border-radius: 5px;
+  // box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+  .review-form-title {
+    margin-bottom: 1rem;
+    display: flex;
+
+    h3 {
+      align-self: flex-end;
+    }
+  }
+}
+
+.review-form {
+  display: grid;
+  grid-template-rows: auto;
+  height: 100%;
+}
+
+.review-form-header {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.review-user {
+  display: flex;
+  justify-items: space-between;
+  // max-width: 100%;
+}
+
+.review .user {
+  // justify-self: space-between;
+}

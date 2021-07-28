@@ -39,74 +39,86 @@ const Dashboard = ({
   const { location, bio, twitter, facebook, youtube, instagram } = formData;
 
   return (
-    <div className='dashboard-wrapper'>
-      {/* <h1 className='large text-primary dashboard-title'>Dashboard</h1> */}
-      <p className='lead dashboard-welcome'>
-        <i className='fas fa-user' />
-        {user && user.name}
-      </p>
-      {profile !== null ? (
-        <div className='dashboard'>
-          <div className='dashboard-social'>
-            <ul className='socials'>
-              <li class='twitter'>
-                <a href={twitter}>
-                  <i className='fab fa-twitter fa-2x' aria-hidden='true' />
-                  <div className='slider'>
-                    <p>twitter</p>
-                  </div>
-                </a>
-              </li>
-              <li class='facebook'>
-                <a href={facebook}>
-                  <i className='fab fa-facebook fa-2x' aria-hidden='true' />
-                  <div className='slider'>
-                    <p>facebook</p>
-                  </div>
-                </a>
-              </li>
-              <li class='youtube'>
-                <a href={youtube}>
-                  <i className='fab fa-youtube fa-2x' aria-hidden='true' />
-                  <div className='slider'>
-                    <p>youtube</p>
-                  </div>
-                </a>
-              </li>
-              <li class='instagram'>
-                <a href={instagram}>
-                  <i className='fab fa-instagram fa-2x' aria-hidden='true' />
-                  <div className='slider'>
-                    <p>instagram</p>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div className='dashboard-bio-wrapper'>
-            <p className='lead'>About</p>{' '}
-            <div className='dashboard-bio'>{bio}</div>
-          </div>
-          <div className='dashboard-location-wrapper'>
-            <div className='dashboard-location'>{location}</div>
-          </div>
-          <DashboardActions className='dashboard-actions' />
-
-          <div className='my-2 dashboard-delete'>
-            <button className='btn btn-danger' onClick={() => deleteAccount()}>
-              <h4>Delete Account</h4>
-            </button>
-          </div>
+    <div className='profile-wrapper'>
+      <div className='profile-nav'>
+        <div className='profile-nav-user'>
+          <i className='fas fa-user' />
+          {user && user.name}
         </div>
-      ) : (
-        <div className='dashboard'>
-          <p>You have not yet setup a profile, please add some info</p>
-          <Link to='/create-profile' className='btn btn-primary my-1'>
-            Create Profile
+        <div className='profile-nav-edit'>
+          <Link to='/edit-profile' className='btn btn-dark'>
+            Edit Profile
           </Link>
         </div>
-      )}
+      </div>
+
+      <div className='dashboard-wrapper'>
+        {profile !== null ? (
+          <div className='dashboard'>
+            <div className='dashboard-social'>
+              <ul className='socials'>
+                <li class='twitter'>
+                  <a href={twitter}>
+                    <i className='fab fa-twitter fa-2x' aria-hidden='true' />
+                    <div className='slider'>
+                      <p>twitter</p>
+                    </div>
+                  </a>
+                </li>
+                <li class='facebook'>
+                  <a href={facebook}>
+                    <i className='fab fa-facebook fa-2x' aria-hidden='true' />
+                    <div className='slider'>
+                      <p>facebook</p>
+                    </div>
+                  </a>
+                </li>
+                <li class='youtube'>
+                  <a href={youtube}>
+                    <i className='fab fa-youtube fa-2x' aria-hidden='true' />
+                    <div className='slider'>
+                      <p>youtube</p>
+                    </div>
+                  </a>
+                </li>
+                <li class='instagram'>
+                  <a href={instagram}>
+                    <i className='fab fa-instagram fa-2x' aria-hidden='true' />
+                    <div className='slider'>
+                      <p>instagram</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div className='dashboard-bio-wrapper'>
+              <p className='lead'>About</p>{' '}
+              <div className='dashboard-bio'>{bio}</div>
+            </div>
+            <div className='dashboard-location-wrapper'>
+              <div className='dashboard-location'>{location}</div>
+            </div>
+            {/* <DashboardActions className='dashboard-actions' /> */}
+
+            <div className='my-2 dashboard-delete'>
+              <button
+                className='btn btn-danger'
+                onClick={() => deleteAccount()}
+              >
+                <h4>Delete Account</h4>
+              </button>
+            </div>
+          </div>
+        ) : (
+          <div className='dashboard'>
+            <p>You have not yet setup a profile, please add some info</p>
+            <Link to='/create-profile' className='btn btn-primary my-1'>
+              Create Profile
+            </Link>
+          </div>
+        )}
+      </div>
     </div>
   );
 };

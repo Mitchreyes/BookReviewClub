@@ -34,6 +34,7 @@
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
   color: black;
   outline: none;
+  min-height: 300px;
 }
 
 .dashboard-bio-wrapper p {
@@ -85,4 +86,33 @@
 
 .dashboard-actions {
   display: grid;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+  }
+  .dashboard-bio-wrapper {
+    width: 100%;
+    padding-right: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dashboard-bio {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0px;
+  }
+
+  .dashboard-wrapper {
+    margin-top: 1rem;
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-location {
+    justify-self: center;
+  }
 }

@@ -46,6 +46,14 @@ ul {
   height: 100%;
 }
 
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .container {
+    padding: 0.5rem;
+    width: 80%;
+  }
+}
+
 /* Form */
 .form .form-group {
   margin: 1.2rem 0;
@@ -87,3 +95,4 @@ button {
 @import 'social.scss';
 @import 'review.scss';
 @import 'profiles.scss';
+@import 'draftjs.scss';
