@@ -47,22 +47,27 @@ const ReviewItem = ({
             <button
               onClick={() => addLike(_id)}
               type='button'
-              className='btn btn-light'
+              className='btn btn-light like-dislike'
             >
               <i className='fas fa-thumbs-up' />{' '}
-              <span>{likes.length > 0 && <span>{likes.length}</span>}</span>
+              <span>
+                {likes.length > 0 && <span className='ml'>{likes.length}</span>}
+              </span>
             </button>
             <button
               onClick={() => removeLike(_id)}
               type='button'
-              className='btn btn-light'
+              className='btn btn-light like-dislike'
             >
               <i className='fas fa-thumbs-down' />
             </button>
-            <Link to={`/reviews/${_id}`} className='btn btn-primary'>
+            <Link
+              to={`/reviews/${_id}`}
+              className='btn btn-primary like-dislike'
+            >
               Discussion{' '}
               {comments.length > 0 && (
-                <span className='comment-count'>{comments.length}</span>
+                <span className='comment-count ml'>{comments.length}</span>
               )}
             </Link>
             {!auth.loading && user === auth.user._id && (

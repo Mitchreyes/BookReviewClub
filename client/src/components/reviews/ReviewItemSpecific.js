@@ -22,7 +22,7 @@ const ReviewItemSpecific = ({
       </div> */}
       <div className='review-body'>
         <div className='review-title'>
-          <h1 className='large-title'>{title}</h1>
+          <h1>{title}</h1>
         </div>
         <div className='review-author'>
           <h2>by {author}</h2>

@@ -15,6 +15,11 @@
   }
 }
 
+.like-dislike {
+  display: flex;
+  flex-direction: row;
+}
+
 .home-review-button {
   display: flex;
   justify-content: center;
