@@ -27,7 +27,7 @@
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   .reviews-item {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -222,7 +222,9 @@ select {
 
 .comments {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 
 //REVIEW FORM
