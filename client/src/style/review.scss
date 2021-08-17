@@ -71,7 +71,7 @@
 .reviews-panel {
   display: flex;
   flex-flow: row;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .comment-form {
@@ -275,9 +275,6 @@ select {
   }
 
   .reviews-panel {
-    // margin-left: 5rem;
-    // margin-right: 5rem;
-    max-width: 80%;
   }
 
   .reviews-title {
@@ -288,6 +285,7 @@ select {
 
   .reviews-panel .btn-danger {
     padding: 0.5rem;
+    margin-right: 0;
   }
 
   .reviews-panel .btn-primary {
@@ -296,6 +294,10 @@ select {
 
   .reviews-panel .btn-light {
     width: 0%;
-    margin-right: 0;
+    margin-right: 0.2rem;
+  }
+
+  .like {
+    margin-left: 0;
   }
 }
