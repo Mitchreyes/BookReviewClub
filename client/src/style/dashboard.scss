@@ -91,6 +91,12 @@
   .dashboard {
     display: flex;
     flex-direction: column;
+    max-width: fit-content;
+  }
+
+  .profile-body {
+    margin: 0;
+    max-width: 100%;
   }
   .dashboard-bio-wrapper {
     width: 100%;
@@ -102,15 +108,33 @@
   .dashboard-bio {
     display: flex;
     flex-direction: column;
-    padding-right: 0px;
   }
 
   .dashboard-wrapper {
     margin-top: 1rem;
-    grid-template-columns: 1fr;
+    justify-self: center;
   }
 
   .dashboard-location {
     justify-self: center;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .dashboard-bio {
+    justify-self: center;
+  }
+  .dashboard {
+    margin-top: 1rem;
+    max-width: fit-content;
+    justify-self: center;
+  }
+  .dashboard-bio-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile-reviews-wrapper {
+    justify-self: flex-start;
   }
 }

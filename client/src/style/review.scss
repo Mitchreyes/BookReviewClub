@@ -300,19 +300,31 @@ select {
   .like {
     margin-left: 0;
   }
+
+  .reviews-wrapper {
+    width: 82%;
+  }
+  .reviews {
+    width: 90%;
+  }
 }
 
 @media only screen and (max-width: 320px) {
   /* For mobile phones: */
-  .reviews-item {
+  .reviews-item-profile {
+    max-width: min-content;
+    align-self: flex-start;
+    box-sizing: content-box;
+    width: 60%;
+  }
+
+  .reviews {
+    box-sizing: content-box;
     width: 100%;
   }
 
-  .reviews-wrapper {
-    width: 100%;
-  }
-
-  .reviews-panel {
+  h1 {
+    font-size: 18px;
   }
 
   .reviews-title {
@@ -345,5 +357,9 @@ select {
 
   .like {
     margin-left: 0;
+  }
+
+  .reviews-page-wrapper {
+    padding: 0;
   }
 }

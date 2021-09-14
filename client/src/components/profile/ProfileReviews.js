@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { getReviews } from '../../actions/review';
-import ReviewItem from '../reviews/ReviewItem';
+import ReviewItemProfile from '../reviews/ReviewItemProfile';
 
 const ProfileReviews = ({
   getReviews,
@@ -24,7 +24,7 @@ const ProfileReviews = ({
       </div>
       <div className='reviews'>
         {userReviews.map((review) => (
-          <ReviewItem key={review._id} review={review} />
+          <ReviewItemProfile key={review._id} review={review} />
         ))}
       </div>{' '}
     </div>
