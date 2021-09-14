@@ -57,7 +57,7 @@ const Dashboard = ({
           <div className='dashboard'>
             <div className='dashboard-social'>
               <ul className='socials'>
-                <li class='twitter'>
+                <li className='twitter'>
                   <a href={twitter}>
                     <i className='fab fa-twitter fa-2x' aria-hidden='true' />
                     <div className='slider'>
@@ -65,7 +65,7 @@ const Dashboard = ({
                     </div>
                   </a>
                 </li>
-                <li class='facebook'>
+                <li className='facebook'>
                   <a href={facebook}>
                     <i className='fab fa-facebook fa-2x' aria-hidden='true' />
                     <div className='slider'>
@@ -73,7 +73,7 @@ const Dashboard = ({
                     </div>
                   </a>
                 </li>
-                <li class='youtube'>
+                <li className='youtube'>
                   <a href={youtube}>
                     <i className='fab fa-youtube fa-2x' aria-hidden='true' />
                     <div className='slider'>
@@ -81,7 +81,7 @@ const Dashboard = ({
                     </div>
                   </a>
                 </li>
-                <li class='instagram'>
+                <li className='instagram'>
                   <a href={instagram}>
                     <i className='fab fa-instagram fa-2x' aria-hidden='true' />
                     <div className='slider'>

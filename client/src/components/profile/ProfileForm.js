@@ -64,7 +64,9 @@ const ProfileForm = ({
             onChange={onChange}
             className='login-input input width-50'
           />
-          <p className='form-text p'>City & state suggested (eg. Boston, MA)</p>
+          <p className='form-text p'>
+            City & state suggested (eg. Portland, OR)
+          </p>
         </div>
         <div className='profile-form-bio  '>
           <textarea
@@ -77,7 +79,7 @@ const ProfileForm = ({
           <p className='form-text my p'>Tell us a little about yourself</p>
         </div>
 
-        <div className='my-2'>
+        <div className='profile-form-social-toggle my-2'>
           <button
             onClick={() => toggleSocialInputs(!displaySocialInputs)}
             type='button'

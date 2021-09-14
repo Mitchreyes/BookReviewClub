@@ -9,10 +9,10 @@ const ProfileItem = ({
   },
 }) => {
   return (
-    <div className='profile bg-light'>
-      <p className='my-1'>{location && <span>{location}</span>}</p>
-      <h2>{name}</h2>
-      <Link to={`/profile/${_id}`} className='btn btn-primary'>
+    <div className='profiles bg-light'>
+      <p className='profiles-location'>{location && <span>{location}</span>}</p>
+      <h2 className='profiles-name'>{name}</h2>
+      <Link to={`/profile/${_id}`} className='profiles-btn btn btn-primary'>
         <span>View Profile</span>
       </Link>
     </div>

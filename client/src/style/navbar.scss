@@ -89,3 +89,32 @@
     }
   }
 }
+
+@media only screen and (max-width: 320px) {
+  .nav-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .left-column {
+    margin-bottom: 3rem;
+    justify-content: center;
+  }
+  .right-column {
+    a {
+      font-size: 0.95rem;
+    }
+    i {
+      font-size: 0.8rem;
+      margin: 0;
+    }
+    ul {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+    }
+  }
+}

@@ -16,10 +16,6 @@ const ReviewForm = ({ postReview }) => {
   );
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  // useEffect(() => {
-  //   console.log(isSubmitted);
-  // }, [isSubmitted]);
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     let review = draftToHtml(convertToRaw(editorState.getCurrentContent()));

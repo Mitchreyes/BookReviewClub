@@ -27,7 +27,7 @@ const Login = ({ login, isAuthenticated }) => {
   return (
     <div className='login-wrapper'>
       <form
-        autocomplete='new-password'
+        autoComplete='new-password'
         className='login-form'
         onSubmit={onSubmit}
       >
@@ -39,7 +39,7 @@ const Login = ({ login, isAuthenticated }) => {
             name='email'
             value={email}
             onChange={onChange}
-            autocomplete='new-password'
+            autoComplete='new-password'
             required
           />
         </div>
@@ -52,7 +52,7 @@ const Login = ({ login, isAuthenticated }) => {
             value={password}
             onChange={onChange}
             minLength='6'
-            autocomplete='new-password'
+            autoComplete='new-password'
           />
         </div>
         <input

@@ -10,7 +10,6 @@ const ProfileReviews = ({
   profile: { user },
 }) => {
   let userReviews = reviews.filter((review) => review.user === user._id);
-  console.log(userReviews);
 
   useEffect(() => {
     getReviews();

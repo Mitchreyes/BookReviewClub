@@ -45,7 +45,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
             name='name'
             value={name}
             onChange={onChange}
-            autocomplete='new-password'
+            autoComplete='new-password'
           />
         </div>
         <div className='input-fields register'>
@@ -56,7 +56,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
             name='email'
             value={email}
             onChange={onChange}
-            autocomplete='new-password'
+            autoComplete='new-password'
           />
         </div>
         <div className='input-fields register'>
@@ -67,7 +67,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
             name='password'
             value={password}
             onChange={onChange}
-            autocomplete='new-password'
+            autoComplete='new-password'
           />
         </div>
         <div className='input-fields register'>

@@ -34,7 +34,7 @@
 }
 
 .social-input-wrapper {
-  width: 250px;
+  width: 225px;
   display: grid;
   grid-template-rows: auto;
   grid-gap: 20px;
@@ -80,6 +80,10 @@
   width: 50%;
 }
 
+.profile-form-social-toggle .btn {
+  width: 100%;
+}
+
 .profile-form textarea,
 select {
   // align-self: center;
@@ -101,6 +105,10 @@ select {
   resize: none;
   font-size: 1.2rem;
   // color: rgba(0, 0, 0, 0.7);
+}
+
+.profiles {
+  margin-bottom: 2rem;
 }
 
 @media only screen and (max-width: 768px) {
