@@ -12,7 +12,7 @@
 .socials li .fab {
   position: absolute;
   top: 50%;
-  left: 10%;
+  left: 50%;
   transform: translate(-50%, -50%);
   font-size: 20px;
   color: #fff;
@@ -87,6 +87,10 @@ ul li:hover .slider p {
 @media only screen and (max-width: 768px) {
   .socials li {
     width: 100%;
+  }
+
+  .socials li .fab {
+    left: 10%;
   }
 
   .slider {

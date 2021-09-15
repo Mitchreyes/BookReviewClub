@@ -89,10 +89,6 @@
   width: 50%;
 }
 
-.profile-form-social-toggle .btn {
-  width: 100%;
-}
-
 .profile-form textarea,
 select {
   // align-self: center;
@@ -139,6 +135,7 @@ select {
   .profile-body {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
   }
 
@@ -153,5 +150,9 @@ select {
   .profile-wrapper h1,
   p {
     text-align: center;
+  }
+
+  .profile-form-social-toggle .btn {
+    width: 100%;
   }
 }
