@@ -117,7 +117,14 @@
 
   .dashboard-location {
     justify-self: center;
+    text-align: center;
+    margin-top: 1rem;
   }
+}
+
+.dashboard-delete {
+  display: flex;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 320px) {

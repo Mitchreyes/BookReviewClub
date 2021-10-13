@@ -17,7 +17,7 @@ const CommentItem = ({
         <h4>{name}</h4>
       </Link>
     </div>
-    <div>
+    <div className='comment-body'>
       <p className='my-1'>{text}</p>
       <p className='comment-date'>
         Posted on <Moment format='YYYY/MM/DD'>{date}</Moment>

@@ -46,7 +46,7 @@ const Navbar = ({ auth: { isAuthenticated }, logout }) => {
     <nav className='nav-wrapper'>
       <div className='left-column'>
         <h1 className='large'>
-          <Link to='/'>
+          <Link to='/' className='nav-header'>
             Book Review <div className='text-primary'>Club</div>
           </Link>
         </h1>

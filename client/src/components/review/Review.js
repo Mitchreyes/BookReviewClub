@@ -16,7 +16,7 @@ const Review = ({ getReview, review: { review, loading }, match }) => {
     <Spinner />
   ) : (
     <Fragment>
-      <Link to='/reviews' className='m-75 btn btn-dark'>
+      <Link to='/reviews' className='backbtn btn btn-dark'>
         Back To Reviews
       </Link>
       <ReviewItemSpecific review={review} showActions={false} />

@@ -35,6 +35,8 @@
 .reviews-user {
   display: flex;
   justify-content: center;
+  margin-top: 1rem;
+  text-align: center;
 }
 
 .reviews-user .user {
@@ -310,6 +312,10 @@ select {
   .reviews {
     width: 90%;
   }
+
+  .like-dislike {
+    margin-bottom: 0.5rem;
+  }
 }
 
 @media only screen and (max-width: 320px) {
@@ -317,6 +323,22 @@ select {
   .reviews-item-profile {
     align-self: center;
     width: 100%;
+  }
+
+  .comment {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .comment-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .backbtn {
+    display: flex;
+    justify-content: center;
   }
 
   .reviews {
@@ -354,7 +376,7 @@ select {
 
   .reviews-panel .btn-light {
     width: 0%;
-    margin-right: 0.2rem;
+    margin-right: 1.5rem;
   }
 
   .like {

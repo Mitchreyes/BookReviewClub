@@ -124,12 +124,17 @@ select {
   }
 
   .dashboard-wrapper {
-    width: 87%;
+    width: 100%;
   }
 
   .profile-nav {
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
+  }
+
+  .profile-nav-user {
+    margin-right: 0.75rem;
   }
 
   .profile-body {
