@@ -266,8 +266,16 @@ select {
   // max-width: 100%;
 }
 
+.dislike {
+  margin-right: 0.5rem;
+  margin-left: 0.4rem;
+}
+
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
+  .dislike {
+    margin-left: 0rem;
+  }
   .reviews-item {
     width: 100%;
   }

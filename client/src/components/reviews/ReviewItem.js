@@ -57,7 +57,7 @@ const ReviewItem = ({
             <button
               onClick={() => removeLike(_id)}
               type='button'
-              className='btn btn-light like-dislike'
+              className='dislike btn btn-light like-dislike'
             >
               <i className='fas fa-thumbs-down' />
             </button>
