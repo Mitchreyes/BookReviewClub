@@ -16,6 +16,7 @@
 .profile-reviews-wrapper {
   display: grid;
   align-items: center;
+  gap: 1rem;
 }
 
 .profile-reviews-header {
@@ -123,9 +124,9 @@ select {
     align-items: center;
   }
 
-  .dashboard-wrapper {
-    width: 100%;
-  }
+  // .dashboard-wrapper {
+  //   width: 100%;
+  // }
 
   .profile-nav {
     flex-direction: column;
