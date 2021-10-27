@@ -17,6 +17,7 @@
   display: grid;
   align-items: center;
   gap: 1rem;
+  margin-top: 2rem;
 }
 
 .profile-reviews-header {
@@ -118,6 +119,11 @@ select {
 }
 
 @media only screen and (max-width: 768px) {
+  .profile-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   .profile-form {
     display: flex;
     flex-direction: column;
