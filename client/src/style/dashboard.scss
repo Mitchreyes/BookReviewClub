@@ -87,6 +87,9 @@
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
+  .dashboard-bio-wrapper p {
+    margin-left: 0;
+  }
   .dashboard {
     display: flex;
     flex-direction: column;
@@ -107,6 +110,7 @@
     display: flex;
     flex-direction: column;
     margin-left: 0;
+    min-width: 288px;
   }
 
   .dashboard-bio {
